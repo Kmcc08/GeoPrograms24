@@ -26,28 +26,11 @@ public class GradedPicture extends World{
         plane.isTrail=true;
         plane.pausetime = 1;
         plane.trailWidth = 5;
-        plane.teleport(85,233);
-        house();
-        plane.teleport(135,233);
-        house();
-        plane.teleport(185,233);
-        house();
-        plane.teleport(235,233);
-        house();
-        plane.teleport(285,233);
-        house();
-        plane.teleport(335,233);
-        house();
-        plane.teleport(385,233);
-        house();
-        plane.teleport(435,233);
-        house();
-        plane.teleport(485,233);
-        house();
-        plane.teleport(535,233);
-        house();
-        plane.teleport(385,233);
-        house();
+        for(int x = 85; x<=535; x+=50){
+            plane.teleport(x, 233);
+            house();
+        }
+
 
 
 
@@ -57,7 +40,7 @@ public class GradedPicture extends World{
 
 
         public void house() {
-            plane.setColor((int)(Math.random()*100),(int)(Math.random()*200),(int)(Math.random()*255));
+            plane.setColor((int)(Math.random()*255),(int)(Math.random()*50),(int)(Math.random()*200));
             square();
             plane.turn(90);
             plane.turn(150);
