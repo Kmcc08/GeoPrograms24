@@ -30,7 +30,7 @@ public class GradedPicture extends World{
             plane.teleport(x, 233);
             house();
         }
-
+//change
 
 
 
